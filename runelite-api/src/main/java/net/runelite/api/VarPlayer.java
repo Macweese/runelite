@@ -232,6 +232,13 @@ public enum VarPlayer
 	 */
 	LAST_MINIGAME_TELEPORT(888),
 
+	/**
+	 * Charge spell
+	 * 0 < Value * 2 = Remaining ticks on charge buff for God spells
+	 * 0 = No charge buff active
+	 */
+	CHARGE_GOD_SPELL(272),
+
 	;
 
 	private final int id;
