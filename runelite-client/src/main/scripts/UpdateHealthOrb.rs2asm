@@ -1,0 +1,234 @@
+.id                 446
+.int_stack_count    10
+.string_stack_count 0
+.int_var_count      12
+.string_var_count   0
+   iload                  0
+   iconst                 -1
+   if_icmpne              LABEL4
+   jump                   LABEL57
+LABEL4:
+   iconst                 1
+   iload                  7
+   if_setnoclickthrough
+   iconst                 446
+   iconst                 -1
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
+   iconst                 3
+   iconst                 1
+   sconst                 "IIIIIIIIIIY"
+   iload                  0
+   if_setonstattransmit
+   iconst                 446
+   iconst                 -1
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
+   iconst                 102
+   iconst                 456
+   iconst                 2648
+   iconst                 2898
+   iconst                 1377
+   iconst                 5
+   sconst                 "IIIIIIIIIIY"
+   iload                  0
+   if_setonvartransmit
+   iconst                 446
+   iconst                 -1
+   iload                  1
+   iload                  2
+   iload                  3
+   iload                  4
+   iload                  5
+   iload                  6
+   iload                  7
+   iload                  8
+   iload                  9
+   sconst                 "IIIIIIIIII"
+   iload                  0
+   if_setonsubchange
+LABEL57:
+   iconst                 3
+   stat_base
+   istore                 10
+   get_varbit             5314
+   iconst                 1
+   if_icmpeq              LABEL64
+   jump                   LABEL66
+LABEL64:
+   iconst                 99
+   istore                 10
+LABEL66:
+   iload                  1
+   iload                  2
+   iconst                 3
+   stat
+   iload                  10
+   invoke                 449
+   get_varp               102
+   iconst                 0
+   if_icmpgt              LABEL82
+   get_varp               456
+   iconst                 0
+   if_icmpgt              LABEL82
+   get_varbit             10151
+   iconst                 0
+   if_icmpgt              LABEL82
+   jump                   LABEL86
+LABEL82:
+   iconst                 100
+   iload                  3
+   if_settrans
+   jump                   LABEL89
+LABEL86:
+   iconst                 0
+   iload                  3
+   if_settrans
+LABEL89:
+   get_varbit             10151
+   iconst                 0
+   if_icmpgt              LABEL93
+   jump                   LABEL97
+LABEL93:
+   iconst                 1636
+   iload                  4
+   if_setgraphic
+   jump                   LABEL124
+LABEL97:
+   get_varp               456
+   iconst                 0
+   if_icmpgt              LABEL101
+   jump                   LABEL105
+LABEL101:
+   iconst                 1062
+   iload                  4
+   if_setgraphic
+   jump                   LABEL124
+LABEL105:
+   get_varp               102
+   iconst                 1000000
+   if_icmpge              LABEL109
+   jump                   LABEL113
+LABEL109:
+   iconst                 1102
+   iload                  4
+   if_setgraphic
+   jump                   LABEL124
+LABEL113:
+   get_varp               102
+   iconst                 0
+   if_icmpgt              LABEL117
+   jump                   LABEL121
+LABEL117:
+   iconst                 1061
+   iload                  4
+   if_setgraphic
+   jump                   LABEL124
+LABEL121:
+   iconst                 1060
+   iload                  4
+   if_setgraphic
+LABEL124:
+   get_varp               102
+   iconst                 0
+   if_icmpgt              LABEL128
+   jump                   LABEL143
+LABEL128:
+   get_varp               102
+   iconst                 1000000
+   if_icmpge              LABEL132
+   jump                   LABEL136
+LABEL132:
+   iconst                 1102
+   iload                  6
+   if_setgraphic
+   jump                   LABEL139
+LABEL136:
+   iconst                 1061
+   iload                  6
+   if_setgraphic
+LABEL139:
+   iconst                 0
+   iload                  5
+   if_sethide
+   jump                   LABEL146
+LABEL143:
+   iconst                 1
+   iload                  5
+   if_sethide
+LABEL146:
+   iconst                 1072
+   istore                 11
+   get_varp               102
+   iconst                 0
+   if_icmpgt              LABEL158
+   get_varp               456
+   iconst                 0
+   if_icmpgt              LABEL158
+   get_varbit             10151
+   iconst                 0
+   if_icmpgt              LABEL158
+   jump                   LABEL181
+LABEL158:
+   iconst                 3
+   invoke                 918
+   iconst                 1
+   if_icmpeq              LABEL163
+   jump                   LABEL181
+LABEL163:
+   iconst                 44
+   iload                  7
+   iload                  11
+   sconst                 "Id"
+   iload                  8
+   if_setonmouserepeat
+   iconst                 1071
+   istore                 11
+   iconst                 44
+   iload                  7
+   iload                  11
+   sconst                 "Id"
+   iload                  8
+   if_setonmouseleave
+   iconst                 0
+   iload                  8
+   if_sethide
+   jump                   LABEL195
+LABEL181:
+   iconst                 1071
+   iload                  7
+   if_setgraphic
+   iconst                 -1
+   sconst                 ""
+   iload                  8
+   if_setonmouserepeat
+   iconst                 -1
+   sconst                 ""
+   iload                  8
+   if_setonmouseleave
+   iconst                 0
+   iload                  8
+   if_sethide
+   iconst                 1
+   iload                  8
+   if_setnoclickthrough
+LABEL195:
+   iconst                 1067
+   iload                  9
+   if_setgraphic
+   return
+
