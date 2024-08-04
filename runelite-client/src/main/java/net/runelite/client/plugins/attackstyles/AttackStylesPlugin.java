@@ -283,6 +283,15 @@ public class AttackStylesPlugin extends Plugin
 
 	private AttackStyle[] getWeaponTypeStyles(int weaponType)
 	{
+		// Blue Moon Spear
+		if (weaponType == 22)
+		{
+			// Because key 22 is missing from the enum, we instead opt to fetch
+			// the attack styles of weapons in the identical category (bladed staves),
+			// which has the key 21
+			weaponType = 21;
+		}
+
 		// from script4525
 		int weaponStyleEnum = client.getEnum(EnumID.WEAPON_STYLES).getIntValue(weaponType);
 		if (weaponStyleEnum == -1)
