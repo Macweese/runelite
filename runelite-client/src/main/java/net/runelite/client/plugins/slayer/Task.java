@@ -97,7 +97,7 @@ enum Task
 	GHOULS("Ghouls", ItemID.ZOMBIE_HEAD),
 	GIANT_MOLE("The Giant Mole", ItemID.BABY_MOLE),
 	GOBLINS("Goblins", ItemID.ENSOULED_GOBLIN_HEAD),
-	GREATER_DEMONS("Greater demons", ItemID.GREATER_DEMON_MASK),
+	GREATER_DEMONS("Greater demons", ItemID.GREATER_DEMON_MASK, "Tormented Demon"),
 	GREEN_DRAGONS("Green dragons", ItemID.GREEN_DRAGON_MASK, "Baby green dragon", "Elvarg"),
 	GROTESQUE_GUARDIANS("The Grotesque Guardians", ItemID.MIDNIGHT, 0, ItemID.ROCK_HAMMER, "Dusk", "Dawn"),
 	HARPIE_BUG_SWARMS("Harpie bug swarms", ItemID.SWARM),
