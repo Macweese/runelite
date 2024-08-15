@@ -32,6 +32,8 @@ import net.runelite.api.SpriteID;
 @Getter(AccessLevel.PACKAGE)
 enum GameIndicator
 {
+	GREATER_CORRUPTION(SpriteID.SPELL_GREATER_CORRUPTION, GameTimerImageType.SPRITE, "Greater corruption"),
+	LESSER_CORRUPTION(SpriteID.SPELL_LESSER_CORRUPTION, GameTimerImageType.SPRITE, "Lesser corruption"),
 	VENGEANCE_ACTIVE(SpriteID.SPELL_VENGEANCE_OTHER, GameTimerImageType.SPRITE, "Vengeance active");
 
 	private final String description;

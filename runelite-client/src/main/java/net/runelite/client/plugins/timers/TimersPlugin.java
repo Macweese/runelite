@@ -76,6 +76,8 @@ import net.runelite.client.game.ItemVariationMapping;
 import net.runelite.client.game.SpriteManager;
 import net.runelite.client.plugins.Plugin;
 import net.runelite.client.plugins.PluginDescriptor;
+import static net.runelite.client.plugins.timers.GameIndicator.GREATER_CORRUPTION;
+import static net.runelite.client.plugins.timers.GameIndicator.LESSER_CORRUPTION;
 import static net.runelite.client.plugins.timers.GameIndicator.VENGEANCE_ACTIVE;
 import static net.runelite.client.plugins.timers.GameTimer.*;
 import net.runelite.client.ui.overlay.infobox.InfoBoxManager;
@@ -242,6 +244,21 @@ public class TimersPlugin extends Plugin
 			else
 			{
 				removeGameTimer(DEATH_CHARGE_COOLDOWN);
+			}
+		}
+
+		if (event.getVarbitId() == Varbits.CORRUPTION_ACTIVE && config.showArceuusCooldown())
+		{
+			removeGameIndicator(GREATER_CORRUPTION);
+			removeGameIndicator(LESSER_CORRUPTION);
+
+			if (event.getValue() == 1)
+			{
+				createGameIndicator(LESSER_CORRUPTION);
+			}
+			else if (event.getValue() == 2)
+			{
+				createGameIndicator(GREATER_CORRUPTION);
 			}
 		}
 

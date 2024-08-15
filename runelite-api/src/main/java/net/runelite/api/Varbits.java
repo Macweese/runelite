@@ -624,6 +624,7 @@ public final class Varbits
 	public static final int DEATH_CHARGE = 12411;
 	public static final int RESURRECT_THRALL = 12413;
 	public static final int SHADOW_VEIL = 12414;
+	public static final int CORRUPTION_ACTIVE = 12136;
 
 	/**
 	 * Spell cooldowns
