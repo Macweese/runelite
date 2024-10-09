@@ -447,6 +447,7 @@ enum DiscordGameEventType
 	REGION_PORT_TYRAS("Port Tyras", DiscordAreaType.REGIONS, 8496),
 	REGION_PURO_PURO("Puro Puro", DiscordAreaType.REGIONS, 10307),
 	REGION_QUARRY("Quarry", DiscordAreaType.REGIONS, 12589),
+	REGION_QUETZICALLI_GORGE("Quetzicalli Gorge", DiscordAreaType.REGIONS, 5938),
 	REGION_RALOS_RISE("Ralos' Rise", DiscordAreaType.REGIONS, 5424, 5425, 5679, 5680, 5681, 5682),
 	REGION_RANGING_GUILD("Ranging Guild", DiscordAreaType.REGIONS, 10549),
 	REGION_RATCATCHERS_MANSION("Ratcatchers Mansion", DiscordAreaType.REGIONS, 11343),
