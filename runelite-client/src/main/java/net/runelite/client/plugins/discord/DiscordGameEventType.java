@@ -343,6 +343,7 @@ enum DiscordGameEventType
 	REGION_AGILITY_PYRAMID("Agility Pyramid", DiscordAreaType.REGIONS, 12105, 13356),
 	REGION_AIR_ALTAR("Air Altar", DiscordAreaType.REGIONS, 11339),
 	REGION_AL_KHARID_MINE("Al Kharid Mine", DiscordAreaType.REGIONS, 13107),
+	REGION_ALDARIN("Aldarin", DiscordAreaType.REGIONS, 5165, 5166, 5421, 5422, 5677, 5678, 5933),
 	REGION_ANCIENT_VAULT("Ancient Vault", DiscordAreaType.REGIONS, 12644, 13156),
 	REGION_APE_ATOLL("Ape Atoll" , DiscordAreaType.REGIONS, 10794, 10795, 10974, 11050),
 	REGION_ARANDAR("Arandar", DiscordAreaType.REGIONS, 9266, 9267, 9523),
