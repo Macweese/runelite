@@ -136,6 +136,7 @@ enum DiscordGameEventType
 	CITY_MEIYERDITCH("Meiyerditch" , DiscordAreaType.CITIES, 14132, 14387, 14386, 14385),
 	CITY_MENAPHOS("Menaphos", DiscordAreaType.CITIES, 12843),
 	CITY_MISCELLANIA("Miscellania" , DiscordAreaType.CITIES, 10044),
+	CITY_MISTROCK("Mistrock" , DiscordAreaType.CITIES, 5420, 5676),
 	CITY_MOR_UL_REK("Mor Ul Rek" , DiscordAreaType.CITIES, 9808, 9807, 10064, 10063),
 	CITY_MORTTON("Mort'ton" , DiscordAreaType.CITIES, 13875),
 	CITY_MOS_LE_HARMLESS("Mos Le'Harmless" , DiscordAreaType.CITIES, 14637, 14638, 14639, 14894, 14895, 15151, 15406, 15407),
