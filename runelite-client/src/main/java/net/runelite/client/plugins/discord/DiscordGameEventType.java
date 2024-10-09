@@ -468,6 +468,7 @@ enum DiscordGameEventType
 	REGION_STRANGLEWOOD_TEMPLE("Stranglewood Temple", DiscordAreaType.REGIONS, 4761),
 	REGION_SUNSET_COAST("Sunset Coast", DiscordAreaType.REGIONS, 5934, 6190),
 	REGION_THE_DARKFROST("The Darkfrost", DiscordAreaType.REGIONS, 5939),
+	REGION_THE_PROUDSPIRE("The Proudspire", DiscordAreaType.REGIONS, 6194),
 	REGION_THE_SCAR("The Scar", DiscordAreaType.REGIONS, 8036, 8292),
 	REGION_THE_STRANGLEWOOD("The Stranglewood", DiscordAreaType.REGIONS, 4403, 4404, 4659, 4660, 4661, 4916, 4917),
 	REGION_TROLL_ARENA("Troll Arena", DiscordAreaType.REGIONS, 11576),
