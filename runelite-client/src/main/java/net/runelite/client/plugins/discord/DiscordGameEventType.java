@@ -471,6 +471,7 @@ enum DiscordGameEventType
 	REGION_THE_PROUDSPIRE("The Proudspire", DiscordAreaType.REGIONS, 6194),
 	REGION_THE_SCAR("The Scar", DiscordAreaType.REGIONS, 8036, 8292),
 	REGION_THE_STRANGLEWOOD("The Stranglewood", DiscordAreaType.REGIONS, 4403, 4404, 4659, 4660, 4661, 4916, 4917),
+	REGION_TOWER_OF_ASCENSION("Tower of Ascension", DiscordAreaType.REGIONS, 6450),
 	REGION_TROLL_ARENA("Troll Arena", DiscordAreaType.REGIONS, 11576),
 	REGION_TROLLHEIM("Trollheim", DiscordAreaType.REGIONS, 11577),
 	REGION_TROLLWEISS_MTN("Trollweiss Mountain", DiscordAreaType.REGIONS, 11066, 11067, 11068),
