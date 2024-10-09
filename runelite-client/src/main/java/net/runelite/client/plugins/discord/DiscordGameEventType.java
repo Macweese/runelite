@@ -460,6 +460,7 @@ enum DiscordGameEventType
 	REGION_SCAPERUNE("ScapeRune", DiscordAreaType.REGIONS, 10058, 7758, 8261),
 	REGION_SEA_SPIRIT_DOCK("Sea Spirit Dock", DiscordAreaType.REGIONS, 12332),
 	REGION_SHIP_YARD("Ship Yard", DiscordAreaType.REGIONS, 11823),
+	REGION_SHIPWRECK_COVE("Shipwreck Cove", DiscordAreaType.REGIONS, 6195),
 	REGION_SILVAREA("Silvarea", DiscordAreaType.REGIONS, 13366),
 	REGION_SINCLAR_MANSION("Sinclair Mansion", DiscordAreaType.REGIONS, 10807),
 	REGION_SLAYER_TOWER("Slayer Tower", DiscordAreaType.REGIONS, 13623, 13723),
