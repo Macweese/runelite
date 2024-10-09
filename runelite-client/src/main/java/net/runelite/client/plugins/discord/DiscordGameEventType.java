@@ -476,6 +476,7 @@ enum DiscordGameEventType
 	REGION_TROLLHEIM("Trollheim", DiscordAreaType.REGIONS, 11577),
 	REGION_TROLLWEISS_MTN("Trollweiss Mountain", DiscordAreaType.REGIONS, 11066, 11067, 11068),
 	REGION_TUTORIAL_ISLAND("Tutorial Island", DiscordAreaType.REGIONS, 12079, 12080, 12335, 12336, 12436, 12592),
+	REGION_TWILIGHT_TEMPLE("Twilight Temple", DiscordAreaType.REGIONS, 6706, 6707),
 	REGION_UNDERWATER("Underwater", DiscordAreaType.REGIONS, 15008, 15264),
 	REGION_WATER_ALTAR("Water Altar", DiscordAreaType.REGIONS, 10827),
 	REGION_WATERBIRTH_ISLAND("Waterbirth Island", DiscordAreaType.REGIONS, 10042),
