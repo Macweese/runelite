@@ -454,6 +454,7 @@ enum DiscordGameEventType
 	REGION_RUINS_OF_UNKAH("Ruins of Unkah", DiscordAreaType.REGIONS, 12588),
 	REGION_RUINS_OF_ULLEK("Ruins of Ullek", DiscordAreaType.REGIONS, 13355, 13611, 13612),
 	REGION_RUNE_ESSENCE_MINE("Rune Essence Mine", DiscordAreaType.REGIONS, 11595),
+	REGION_SALVAGER_OVERLOOK("Salvager Overlook", DiscordAreaType.REGIONS, 6451),
 	// The Beekeper, Pinball, and Gravedigger randoms share a region (7758), and although they are not technically ScapeRune, that name is most commonly
 	// associated with random events, so those three have been denoted ScapeRune to avoid leaving multiple random event regions without an assigned name.
 	REGION_SCAPERUNE("ScapeRune", DiscordAreaType.REGIONS, 10058, 7758, 8261),
