@@ -142,6 +142,15 @@ public class IdleNotifierPlugin extends Plugin
 		int animation = localPlayer.getAnimation();
 		switch (animation)
 		{
+			/* Smithing(Anvil, Furnace, Cannonballs) */
+			case SMITHING_CANNONBALL:
+				// SMITHING_CANNONBALL shares animation with climbing down ladders,
+				// capture the player position to later check if the player climbed a ladder or completed a skill action
+				lastPosition = client.getLocalPlayer() == null ? null : client.getLocalPlayer().getWorldLocation();
+				// Fall through
+			case SMITHING_ANVIL:
+			case SMITHING_IMCANDO_HAMMER:
+			case SMITHING_SMELTING:
 			/* Woodcutting */
 			case WOODCUTTING_BRONZE:
 			case WOODCUTTING_IRON:
@@ -253,11 +262,6 @@ public class IdleNotifierPlugin extends Plugin
 			case FLETCHING_ATTACH_BOLT_TIPS_TO_ADAMANT_BOLT:
 			case FLETCHING_ATTACH_BOLT_TIPS_TO_RUNE_BOLT:
 			case FLETCHING_ATTACH_BOLT_TIPS_TO_DRAGON_BOLT:
-			/* Smithing(Anvil, Furnace, Cannonballs */
-			case SMITHING_ANVIL:
-			case SMITHING_IMCANDO_HAMMER:
-			case SMITHING_SMELTING:
-			case SMITHING_CANNONBALL:
 			/* Fishing */
 			case FISHING_CRUSHING_INFERNAL_EELS:
 			case FISHING_CRUSHING_INFERNAL_EELS_IMCANDO_HAMMER:
@@ -925,7 +929,7 @@ public class IdleNotifierPlugin extends Plugin
 
 	private boolean checkAnimationIdle(Duration waitDuration, Player local)
 	{
-		if (lastAnimation == IDLE)
+		if (lastAnimation == IDLE || lastAnimation == SMITHING_CANNONBALL && local.getWorldLocation() != lastPosition)
 		{
 			return false;
 		}
