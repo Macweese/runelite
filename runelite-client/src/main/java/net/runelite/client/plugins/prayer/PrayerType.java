@@ -59,6 +59,8 @@ enum PrayerType
 	SMITE("Smite", Prayer.SMITE, "Removes 1 Prayer point from an enemy for every 4 damage inflicted on the enemy", SpriteID.PRAYER_SMITE, true, 18),
 	PRESERVE("Preserve", Prayer.PRESERVE, "Boosted stats last 50% longer", SpriteID.PRAYER_PRESERVE, false, 2),
 	CHIVALRY("Chivalry", Prayer.CHIVALRY, "+15% Attack, +18% Strength, +20% Defence", SpriteID.PRAYER_CHIVALRY, false, 24),
+	DEADEYE("Deadeye", Prayer.DEADEYE, "+18% Ranged attack, +18% Ranged strength, +5% Defence", SpriteID.PRAYER_DEADEYE, false, 12),
+	MYSTIC_VIGOUR("Mystic Vigour", Prayer.MYSTIC_VIGOUR, "+18% Magical attack and defence, +3% Magic damage, +5% Defence", SpriteID.PRAYER_MYSTIC_VIGOUR, false, 12),
 	PIETY("Piety", Prayer.PIETY, "+20% Attack, +23% Strength, +25% Defence", SpriteID.PRAYER_PIETY, false, 24),
 	RIGOUR("Rigour", Prayer.RIGOUR, "+20% Ranged attack, +23% Ranged strength, +25% Defence", SpriteID.PRAYER_RIGOUR, false, 24),
 	AUGURY("Augury", Prayer.AUGURY, "+25% Magical attack and defence, +25% Defence", SpriteID.PRAYER_AUGURY, false, 24),

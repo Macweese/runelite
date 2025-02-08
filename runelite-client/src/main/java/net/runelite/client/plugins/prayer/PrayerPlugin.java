@@ -42,6 +42,7 @@ import net.runelite.api.Item;
 import net.runelite.api.ItemContainer;
 import net.runelite.api.Prayer;
 import net.runelite.api.Skill;
+import net.runelite.api.Varbits;
 import net.runelite.api.events.GameTick;
 import net.runelite.api.events.ItemContainerChanged;
 import net.runelite.api.widgets.ComponentID;
@@ -213,6 +214,16 @@ public class PrayerPlugin extends Plugin
 			if (client.isPrayerActive(prayer))
 			{
 				if (prayerType.isOverhead() && !config.prayerIndicatorOverheads())
+				{
+					continue;
+				}
+
+				// Eagle Eye, Mystic Might have the same bitmask as Deadeye, Mystic Vigour respectively
+				// filter by unlock/presets to determine the correct active prayer
+				if (prayerType == PrayerType.EAGLE_EYE && (client.getVarbitValue(Varbits.PRAYER_DEADEYE_UNLOCKED) == 1 && !inLms())
+					|| prayerType == PrayerType.MYSTIC_MIGHT && (client.getVarbitValue(Varbits.PRAYER_MYSTIC_VIGOUR_UNLOCKED) == 1 && !inLms())
+					|| prayerType == PrayerType.DEADEYE && (client.getVarbitValue(Varbits.PRAYER_DEADEYE_UNLOCKED) == 0 || inLms())
+					|| prayerType == PrayerType.MYSTIC_VIGOUR && (client.getVarbitValue(Varbits.PRAYER_MYSTIC_VIGOUR_UNLOCKED) == 0 || inLms()))
 				{
 					continue;
 				}
@@ -402,5 +413,10 @@ public class PrayerPlugin extends Plugin
 		{
 			return timeLeft.format(DateTimeFormatter.ofPattern("m:ss"));
 		}
+	}
+
+	private boolean inLms()
+	{
+		return client.getWidget(ComponentID.LMS_INGAME_INFO) != null;
 	}
 }

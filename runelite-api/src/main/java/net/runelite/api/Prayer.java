@@ -147,6 +147,14 @@ public enum Prayer
 	 * Augury (Level 77, Magic/Magic Def./Defence).
 	 */
 	AUGURY(Varbits.PRAYER_AUGURY),
+	/**
+	 * Deadeye (Level 62, Ranging/Damage/Defence).
+	 */
+	DEADEYE(Varbits.PRAYER_DEADEYE),
+	/**
+	 * Mystic Vigour (Level 63, Magic/Magic Def./Defence).
+	 */
+	MYSTIC_VIGOUR(Varbits.PRAYER_MYSTIC_VIGOUR),
 
 	/**
 	 * Ruinous Powers Rejuvenation (Level 60).

@@ -174,6 +174,8 @@ public final class Varbits
 	public static final int PRAYER_PRESERVE = 5466;
 	public static final int PRAYER_RIGOUR = 5464;
 	public static final int PRAYER_AUGURY = 5465;
+	public static final int PRAYER_DEADEYE = 16090;
+	public static final int PRAYER_MYSTIC_VIGOUR = 16091;
 
 	/**
 	 * Ruinous Powers
