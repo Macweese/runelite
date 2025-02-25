@@ -998,4 +998,13 @@ public final class Varbits
 	public static final int JARVIS_GRAVESTONE = 6008;
 
 	public static final int IN_LMS = 5314;
+
+	/**
+	 * The state for the Song of the Elves quest.
+	 *
+	 * 0 = Not started
+	 * 0 < value < 200 = In progress
+	 * 200 = Finished
+	 */
+	public static final int SONG_OF_THE_ELVES_STATUS = 9016;
 }
