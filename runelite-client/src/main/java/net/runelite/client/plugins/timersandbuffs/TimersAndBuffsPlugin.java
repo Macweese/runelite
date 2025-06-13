@@ -361,7 +361,8 @@ public class TimersAndBuffsPlugin extends Plugin
 		}
 
 		if ((event.getVarbitId() == VarbitID.NZONE_OVERLOAD_POTION_EFFECTS
-			|| event.getVarbitId() == VarbitID.RAIDS_OVERLOAD_TIMER) && config.showOverload())
+			|| event.getVarbitId() == VarbitID.RAIDS_OVERLOAD_TIMER
+			|| event.getVarbitId() == VarbitID.DEADMAN_OVERLOAD_POTION_EFFECTS) && config.showOverload())
 		{
 			final int overloadVarb = event.getValue();
 			final int tickCount = client.getTickCount();
